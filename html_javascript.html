@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML JAVASCRIPT</title>
+</head>
+<body>
+
+	<h3>JAVASCRIPT CHANGE THE CONTENT</h3>
+	<p id="CHANGE1">You are beautiful</p>
+	<button type="button" onclick='document.getElementById("CHANGE1").innerHTML="You are amazing"'>Change Content</button>
+
+	<h3>JAVASCRIPT CHANGE STYLE</h3>
+	<p id="STYLE1">Javascript change the style of this content</p>
+	<script>
+		function myStyle()
+		{
+			document.getElementById("STYLE1").style.fontSize="35px";
+			document.getElementById("STYLE1").style.color="darkred";
+			document.getElementById("STYLE1").style.backgroundColor="lightpink";
+			document.getElementById("STYLE1").style.fontFamily="Georgia";
+		}
+	</script>
+	
+	<button type="button" onclick="myStyle()">Click me</button>
+
+	<h3>JAVASCRIPT DO IMAGE MANIPULATION</h3>
+	<script>
+		function picStyle(a)
+		{
+			var pic;
+			if (a==2)
+			{
+				pic="images/gulp.jpeg"
+			}
+			else
+			{
+				pic="images/swans.jpg"
+			}
+			document.getElementById('PICTURE').src=pic;
+		}
+	</script>
+	<img src="images/gulp.jpeg" width="300" height="250" id="PICTURE">
+	<p>
+	<button type="button" onclick="picStyle(1)">Switch On</button>
+	<button type="button" onclick="picStyle(2)">Switch Off</button>
+	</p>
+
+	<h3>ALERT BOX</h3>
+	<script>
+		{
+			alert("Hi! Welcome to my page!\nEnjoy your stay :)")
+		}
+	</script>
+
+	<iframe src="https://free.timeanddate.com/clock/ia6sk82i/n122/fn10/fc900/tcfcc6bb/ftb/bat6/bac701705/pd2/tt0/tw1/tm1/tb4" frameborder="0" width="139" height="35"></iframe>
+
+	<br>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.6947356813644!2d102.27092387311174!3d5.7570029315996445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1765072400465!5m2!1sen!2smy" width="400" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</body>
+</html>

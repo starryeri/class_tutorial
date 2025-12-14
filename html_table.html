@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML TABLE</title>
+
+<style>
+	table, tr, th, td
+	{
+		border: 5px solid pink ;
+		border-collapse: collapse;
+	}
+	th, td
+	{
+		padding: 30px;
+	}
+	th 
+	{
+		background-color: beige;
+		color: rebeccapurple;
+	}
+	tr:nth-child(odd)
+	{
+		background-color: bisque;
+	}
+	tr:nth-child(even)
+	{
+		background-color: lavender;
+	}
+	td  
+	{
+		text-align: center;
+	}
+	tr:hover  
+	{
+		background-color: lightblue;
+	}
+</style>
+
+</head>
+<body>
+
+<h1>Basic Table</h1>
+
+<table style="width: 100%">
+	<caption>BLACKPINK STUDENTS</caption>
+
+	<tr>
+		<th style="width: 30%;">NAME</th>
+		<th style="width:15%;">STUDENT ID</th>
+		<th style="width:45%;">PICTURE</th>
+		<th style="width:10%;">PHONE NUMBER</th>
+	</tr>
+
+	<tr>
+		<td>KIM JENNIE</td>
+		<td>2023604244</td>
+		<td><img src="images/gulp.jpeg" style="height: 100px;"></td>
+		<td>019260427</td>
+	</tr>
+	<tr style="height: 250px;">
+		<td>KIM LISA</td>
+		<td>202464264</td>
+		<td><img src="images/lily.jpg" style="height: 100px;"></td>
+		<td>017330903</td>
+	</tr>
+	<tr>
+		<td>KIM ROSE</td>
+		<td>202534760</td>
+		<td><img src="images/swans.jpg" style="height: 100px;"></td>
+		<td>018995908</td>
+	</tr>
+</table>
+
+<h1>Colspan</h1>
+
+<table style="width:100%;">
+	
+	<tr>
+		<th>NAME</th>
+		<th>STUDENT ID</th>
+		<th colspan="3">SUBJECT</th>
+	</tr>
+
+	<tr>
+		<td>KIM JISOO</td>
+		<td>202679089</td>
+		<td>IMD300</td>
+		<td>IMD200</td>
+		<td>IMD100</td>
+	</tr>
+
+</table>
+
+<h1>ROWSPAN</h1>
+<table style="width:70%">
+
+	<tr>
+		<th>NAME</th>
+		<td>ERI</td>
+	</tr>
+
+	<tr>
+		<th rowspan="2">EMAIL</th>
+		<td>eri05@gmail.com</td>
+	</tr>
+
+	<tr>
+		<td>puteri05@gmail.com</td>
+	</tr>
+	<tr>
+		<th>ALAMAT</th>
+		<td rowspan="2">NEW YORK</td>
+	</tr>
+	<tr>
+		<th>ALAMAT SURAT</th>
+	</tr>
+</table>
+
+
+</body>
+</html>
